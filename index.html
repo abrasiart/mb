@@ -29,7 +29,7 @@
         }
         /* Estilos para o título do produto e botões de opção */
         .produto-header {
-            background-color: rgba(61, 59, 60, 0.85);
+            background-color: rgba(251, 186, 0, 0.85);
             margin: 20px auto;
             max-width: 600px;
             padding: 20px;
@@ -150,19 +150,7 @@
         <model-viewer id="modelViewer" src="1.glb" alt="Growler_pilsen" auto-rotate camera-controls background-color="#fff"></model-viewer>
     </div>
 
-    <div class="observacoes-container">
-        <h2>Deixe suas considerações</h2>
-        <form id="observacoesForm"> 
-            <textarea id="campoObservacoes" name="observacao" rows="6" placeholder="Escreva seu nome e suas observações" required></textarea>
-            
-            <input type="hidden" name="modelo_nome" id="modeloNomeHidden">
-            <input type="hidden" name="opcao_selecionada" id="opcaoSelecionadaHidden">
-
-            <button type="submit">ENVIAR</button>
-            <div id="formStatusMessage" class="form-status-message" style="display: none;"></div>
-        </form>
-    </div>
-
+  
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const modelViewer = document.getElementById('modelViewer');
